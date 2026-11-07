@@ -1,26 +1,30 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Brand palette (from no-pink-tax-design.html) */
+  --color-ink: #2b1020;
+  --color-ink-soft: #3d1a2e;
+  --color-blush: #fff6f9;
+  --color-petal: #ffe3ec;
+  --color-petal-light: #fff0f5;
+  --color-petal-deep: #fcd0e0;
+  --color-rose: #f9b9cf;
+  --color-line: #f2c4d5;
+  --color-dash: #e58aae;
+  --color-dash-deep: #d16a93;
+  --color-accent: #c2255c;
+  --color-muted: #6e4a5c;
+  --color-plum: #8a3a5c;
+  --color-plum-deep: #6b1e3f;
+  --color-berry: #8a1f48;
+  --color-berry-bright: #a0285a;
+  --color-mist: #f2d3df;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-bricolage);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-blush);
+  color: var(--color-ink);
 }
